@@ -6,7 +6,6 @@
 class piratas : public seres
 {
 private:
-  //TODO Hacer la funcion de seleccion de oceano en el main
   string oceano;
   string tripulacion;
   string funcion;
