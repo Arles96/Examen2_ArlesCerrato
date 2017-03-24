@@ -6,7 +6,7 @@
 
 class fruta_diablo
 {
-private:
+protected:
   string nombre;
 
 public:

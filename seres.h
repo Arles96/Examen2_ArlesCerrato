@@ -12,7 +12,7 @@ using namespace std;
 
 class seres
 {
-private:
+protected:
   //TODO hacer una funcion en el main de raza de los seres
   string raza;
   int edad;
@@ -24,7 +24,7 @@ private:
 public:
   //constructores
   seres();
-  seres(string, int, string, fruta_diablo*, bool, bool,bool);
+  seres(string, int, string, bool, bool,bool);
 
   //getter
   string getRaza();
@@ -37,10 +37,6 @@ public:
 
   //setter
   void setFruta(fruta_diablo*);
-
-  //funcion de admisnitracion
-  virtual leer(ifstream&);
-  virtual escribir(ofstream&);
 
 }:
 

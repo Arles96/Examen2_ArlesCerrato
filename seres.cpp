@@ -4,13 +4,12 @@
 
 seres::seres(){}
 
-seres::seres(string raza, int edad, string nombre, fruta_diablo* fruta, bool haki_observacion, bool haki_armadura,
+seres::seres(string raza, int edad, string nombre, bool haki_observacion, bool haki_armadura,
   bool haki_rey)
 {
   this->raza = raza;
   this->edad = edad;
   this->nombre = nombre;
-  this->fruta = fruta;
   this->haki_observacion = haki_observacion;
   this->haki_armadura = haki_armadura;
   this->haki_rey = haki_rey;
@@ -51,4 +50,11 @@ bool seres::getHaki_armadura()
 bool seres::getHaki_rey()
 {
   return haki_rey;
+}
+
+//setter
+
+void seres::setFruta(fruta_diablo*fruta)
+{
+  this->fruta = fruta;
 }
