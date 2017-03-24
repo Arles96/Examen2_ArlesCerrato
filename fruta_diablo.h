@@ -4,6 +4,8 @@
 #ifndef  FRUTA_DIABLO_H_
 #define FRUTA_DIABLO_H_
 
+using namespace std;
+
 class fruta_diablo
 {
 protected:

@@ -15,6 +15,13 @@ seres::seres(string raza, int edad, string nombre, bool haki_observacion, bool h
   this->haki_rey = haki_rey;
 }
 
+//Destructor
+
+seres::~seres()
+{
+  delete fruta;
+}
+
 //getter
 
 string seres::getRaza()

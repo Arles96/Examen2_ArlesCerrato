@@ -3,6 +3,8 @@
 #ifndef LOGIA_H_
 #define LOGIA_H_
 
+using namespace std;
+
 class logia : public fruta_diablo
 {
 private:
@@ -11,7 +13,7 @@ private:
 public:
   //constructores
   logia();
-  logia(string string);
+  logia(string, string);
 
   //getter
   string getElemento();

@@ -6,7 +6,6 @@
 class zoan : public fruta_diablo
 {
 private:
-  //TODO hacer una funcion el main para este atributo
   string tipo;
   string animal;
 

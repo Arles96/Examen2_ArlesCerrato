@@ -9,7 +9,6 @@ class marina : public seres
 {
 private:
   string fecha;
-  //TODO hacer una funcion en el main para el rango de esta clase
   string rango;
 
 public:

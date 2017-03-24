@@ -1,7 +1,5 @@
 #include <string>
 #include <iostream>
-#include <ofstream>
-#include <ifstream>
 #include "fruta_diablo.h"
 
 
@@ -13,7 +11,6 @@ using namespace std;
 class seres
 {
 protected:
-  //TODO hacer una funcion en el main de raza de los seres
   string raza;
   int edad;
   string nombre;
@@ -25,6 +22,9 @@ public:
   //constructores
   seres();
   seres(string, int, string, bool, bool,bool);
+
+  //Destructor
+  ~seres();
 
   //getter
   string getRaza();
@@ -38,6 +38,6 @@ public:
   //setter
   void setFruta(fruta_diablo*);
 
-}:
+};
 
 #endif
