@@ -214,7 +214,16 @@ int main()
     }//fin de agregar seres
     cout << endl;
     cout << "Desea continuar[s/n]: ";
+    cin>>respuesta;
   }
+  for(int i=0; i<personajes.size();i++){
+    delete personajes[i];
+  }
+  personajes.clear();
+  for(int i=0; i < frutas.size(); i++){
+    delete frutas[i];
+  }
+  frutas.clear();
   return 0;
 }
 
@@ -325,15 +334,17 @@ string seleccionTipo()
 bool seleccionBool()
 {
   string opcion;
+  bool estado=true;
+  bool estado2 = false;
   while (true) {
     cout << "1. verdadero" << endl;
-    cout << "2. falso";
+    cout << "2. falso" << endl;;
     cout << "Ingrese una opcion: ";
     cin>>opcion;
     if (opcion=="1") {
-      return true;
+      return estado;
     }else if (opcion=="2") {
-      return false;
+      return estado2;
     }
   }
 }
@@ -341,6 +352,7 @@ bool seleccionBool()
 int posicionFrutas(vector<fruta_diablo*> frutas)
 {
   int posicion;
+  cout << endl;
   cout << "No.\t" << "Nombre\t" << "Fruta\t" << endl << endl;
   for(int i=0; i < frutas.size(); i++){
     cout << i << "\t" << frutas[i]->getNombre() << "\t" << typeid(*frutas.at(0)).name() << endl;
@@ -368,7 +380,7 @@ void escribir(seres* s) {
   salida << "Edad: " << s->getEdad() << endl;
   salida << "Nombre: " << s->getNombre() << endl;
   salida << endl << "FRUTA:" << endl;
-  salida << "   nombre: " << s->getFruta()->getNombre();
+  salida << "   nombre: " << s->getFruta()->getNombre() << endl;
   //frutas
   /*if (s->getFruta()->getCasteo()=="paramecia") {
     salida << "   descripcion: " << s->getFruta()->getDescripcion() << endl;
