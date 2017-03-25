@@ -118,9 +118,7 @@ int main()
         string fecha;
         string rango;
         cout << "AGREGANDO SERES DE MARINA" << endl << endl;
-        cin.ignore(256,'\n');
-        cout << "Ingrese la raza: ";
-        getline(cin,raza);
+        raza = seleccionRaza();
         cout << "Ingrese la edad: ";
         cin>>edad;
         cin.ignore(256,'\n');
@@ -150,9 +148,7 @@ int main()
       else if (opcion_seres=="2") {//piratas
         string oceano, tripulacion, funcion;
         cout << "AGREGANDO PIRATAS" << endl << endl;
-        cin.ignore(256,'\n');
-        cout << "Ingrese la raza: ";
-        getline(cin,raza);
+        raza = seleccionRaza();
         cout << "Ingrese la edad: ";
         cin>>edad;
         cin.ignore(256,'\n');
@@ -162,8 +158,6 @@ int main()
         ho = seleccionBool();
         cout << endl << "Menu de haki_armadura" << endl << endl;
         ha = seleccionBool();
-        cout << "Menu de haki_rey" << endl << endl;
-        hr = seleccionBool();
         cout << endl << "Menu de haki_rey" << endl << endl;
         hr = seleccionBool();
         cout << endl;
@@ -184,9 +178,7 @@ int main()
       else if (opcion_seres=="3") {//revolucionarios
         string fecha;
         cout << "AGREGANDO REVOLUCIONARIOS" << endl << endl;
-        cin.ignore(256,'\n');
-        cout << "Ingrese la raza: ";
-        getline(cin,raza);
+        raza = seleccionRaza();
         cout << "Ingrese la edad: ";
         cin>>edad;
         cin.ignore(256,'\n');
@@ -196,8 +188,6 @@ int main()
         ho = seleccionBool();
         cout << endl << "Menu de haki_armadura" << endl << endl;
         ha = seleccionBool();
-        cout << "Menu de haki_rey" << endl << endl;
-        hr = seleccionBool();
         cout << endl << "Menu de haki_rey" << endl << endl;
         hr = seleccionBool();
         cout << endl;
