@@ -18,6 +18,7 @@ protected:
   bool haki_observacion;
   bool haki_armadura;
   bool haki_rey;
+  string casteo;
 public:
   //constructores
   seres();

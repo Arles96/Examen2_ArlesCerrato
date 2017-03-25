@@ -10,7 +10,7 @@ class fruta_diablo
 {
 protected:
   string nombre;
-
+  string casteo;
 public:
   //constructores
   fruta_diablo();
@@ -18,6 +18,10 @@ public:
 
   //getter
   string getNombre();
+  string getCasteo();
+
+  //setter
+  void setCasteo(string);
 };
 
 

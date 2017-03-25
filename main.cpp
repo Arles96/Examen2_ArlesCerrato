@@ -370,20 +370,39 @@ void escribir(seres* s) {
   salida << endl << "FRUTA:" << endl;
   salida << "   nombre: " << s->getFruta()->getNombre();
   //frutas
-  if (typeid(*s->getFruta())==typeid(paramecia)) {
-    salida << "   descripcion: " << s->getFruta()->getDescripcion();
-  }else if (typeid(*s->getFruta())==typeid(zoan)) {
-    salida << "   tipo: " << s->getFruta()->getTipo();
-    salida << "   animal: " << s->getFruta()->getAnimal();
-  }else if (typeid(*s->getFruta())==typeid(logia)) {
-    salida << "elemento: " << s->getElemento();
-  }
+  /*if (s->getFruta()->getCasteo()=="paramecia") {
+    salida << "   descripcion: " << s->getFruta()->getDescripcion() << endl;
+  }else if (s->getFruta()->getCasteo()=="zoan") {
+    salida << "   tipo: " << s->getFruta()->getTipo() << endl;
+    salida << "   animal: " << s->getFruta()->getAnimal() << endl;
+  }else if (s->getFruta()->getCasteo()=="logia") {
+    salida << "elemento: " << s->getFruta()->getElemento() << endl;
+  }*/
   //seres
-  if (typeid(*s)==typeid(marina)) {
-
+  /*if (typeid(*s)==typeid(marina)) {
+    salida << "Fecha: " s->getFecha() << endl;
+    salida << "Rango: " s->getRango() << endl;
   }else if (typeid(*s)==typeid(piratas)) {
-
+    salida << "Oceano" << s->getOceano() << endl;
+    salida << "tripulacion: " << s->getTripulacion() << endl;
+    salida << "tripulacion: " << s->getFuncion() << endl;
   }else if (typeid(*s)==typeid(revolucionarios)) {
-
+    salida << "fecha" << s->getFecha() << endl;
+  }*/
+  if (s->getHaki_observacion()==true) {
+    salida << "haki_observacion: " << "true" << endl;
+  }else {
+    salida << "haki_observacion: " << "false" << endl;;
   }
+  if (s->getHaki_armadura()==true) {
+    salida << "haki_armadura: " << "true" << endl;
+  }else {
+    salida << "haki_armadura: " << "false" << endl;
+  }
+  if (s->getHaki_rey()==true) {
+    salida << "haki_rey: " << "true" << endl
+  }else {
+    salida << "haki_rey: " << "false" << endl;
+  }
+  salida.close();
 }
