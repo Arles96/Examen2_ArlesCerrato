@@ -400,7 +400,7 @@ void escribir(seres* s) {
     salida << "haki_armadura: " << "false" << endl;
   }
   if (s->getHaki_rey()==true) {
-    salida << "haki_rey: " << "true" << endl
+    salida << "haki_rey: " << "true" << endl;
   }else {
     salida << "haki_rey: " << "false" << endl;
   }
